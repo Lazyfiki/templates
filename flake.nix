@@ -134,6 +134,21 @@
             path = ./empty;
             description = "default";
           };
+
+          c = {
+            path = ./c;
+            description = "C/C++";
+          };
+
+          java = {
+            path = ./java;
+            description = "Java";
+          };
+
+          latex = {
+            path = ./latex;
+            description = "LaTeX";
+          };
         };
       };
 }
