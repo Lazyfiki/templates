@@ -29,22 +29,20 @@
             packages =
               with pkgs;
               [
+                clang
                 clang-tools
                 cmake
                 codespell
                 conan
                 cppcheck
                 doxygen
+                gnumake
                 gtest
                 lcov
                 vcpkg
                 vcpkg-tool
               ]
               ++ (if system == "aarch64-darwin" then [ ] else [ gdb ]);
-
-            env = {
-              LC_MESSAGES = "en_US.UTF-8";
-            };
           };
         }
       );

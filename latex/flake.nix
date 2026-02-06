@@ -30,10 +30,6 @@
               texliveFull
               tectonic
             ];
-
-            env = {
-              LC_MESSAGES = "en_US.UTF-8";
-            };
           };
         }
       );

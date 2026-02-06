@@ -53,10 +53,6 @@
               zlib
             ];
 
-            env = {
-              LC_MESSAGES = "en_US.UTF-8";
-            };
-
             shellHook =
               let
                 loadLombok = "-javaagent:${pkgs.lombok}/share/java/lombok.jar";
