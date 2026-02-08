@@ -7,7 +7,7 @@ SRC = main.c
 OBJ = ${SRC:.c=.o}
 BIN = build/main
 
-all: ${BIN} run
+all: ${BIN}
 
 .c.o:
 	${CC} -c ${CFLAGS} $< -o $@
@@ -15,10 +15,7 @@ all: ${BIN} run
 ${BIN}: ${OBJ}
 	${CC} -o $@ ${OBJ} ${LDFLAGS}
 
-run: ${BIN}
-	./${BIN}
-
 clean:
 	rm -f ${OBJ} ${BIN}
 
-.PHONY: all run clean
+.PHONY: all clean
