@@ -29,18 +29,15 @@
             packages =
               with pkgs;
               [
-                clang
+                gcc
                 clang-tools
-                cmake
-                codespell
-                conan
-                cppcheck
-                doxygen
                 gnumake
-                gtest
-                lcov
-                vcpkg
-                vcpkg-tool
+                bear
+                doxygen
+                graphviz
+                gdb
+                pkg-config
+                pkgconf
               ]
               ++ (if system == "aarch64-darwin" then [ ] else [ gdb ]);
           };
