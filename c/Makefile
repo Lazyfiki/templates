@@ -1,6 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -Wswitch-enum -Wno-missing-braces -Wno-unused-function \
-		 -Wno-missing-field-initializers -ggdb -O0 -Iheader/
+CFLAGS = -Wall -Wextra -ggdb -O0 -Iheader/
 LDFLAGS = -lm
 
 SRC = main.c
